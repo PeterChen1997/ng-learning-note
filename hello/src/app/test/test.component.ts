@@ -9,6 +9,8 @@ import { Component, OnInit } from '@angular/core';
     <input [disabled]="isDisabled"/>
     <div [class.text-danger]="hasError">123</div>
     <button (click)="onClick()">123</button>
+    <input [(ngModel)]="name" type="text" />
+    {{name}}
   `,
   styles: [`
     .text-danger {
